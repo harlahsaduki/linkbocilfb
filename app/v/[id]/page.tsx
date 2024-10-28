@@ -166,7 +166,7 @@ const jsonLd = {
                 title={file.title}
                 frameBorder={0}
                 allowFullScreen={true}
-            ><img alt={file.title} src=file.splash_img></iframe>
+            ><img alt=`{file.title}` src=`{file.splash_img}`/></iframe>
             <Card className="mx-2 mb-8">
                 <CardHeader>
                     <CardTitle className="text-xl md:text-3xl font-bold">
