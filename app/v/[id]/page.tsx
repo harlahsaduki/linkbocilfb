@@ -40,7 +40,7 @@ export async function generateMetadata(
     }
 
     const file = data.result[0];
-    const title = `${file.title} - ${SITENAME}`;
+    const title = `${file.title}`;
     const description = `${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`;
     const image = file.splash_img;
     const previousOgImages = (await parent).openGraph?.images || [];
@@ -85,7 +85,7 @@ export default async function Video({ params }: PageProps) {
 const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'VideoObject',
-        name: `${file.title} - ${SITENAME}`,
+        name: `${file.title}`,
         thumbnailUrl: file.splash_img,
         description: `${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
         url: `https://linkbocilfb.pages.dev/v/${file.filecode}`,
@@ -105,7 +105,7 @@ const jsonLd = {
         const jsonLd2 = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: `${file.title} - ${SITENAME}`,
+        headline: `${file.title}`,
         image: file.splash_img,
         description: `${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
         url: `https://linkbocilfb.pages.dev/v/${file.filecode}`,
@@ -133,7 +133,7 @@ const jsonLd = {
         const jsonLd3 = {
             '@context': 'https://schema.org', 
             '@type': 'Book', 
-            'name': `${file.title} - ${SITENAME}`, 
+            'name': `${file.title}`, 
             'aggregateRating': {
             '@type': 'AggregateRating',	
                 'ratingValue': '5',	
