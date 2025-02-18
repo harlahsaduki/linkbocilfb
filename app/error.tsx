@@ -1,5 +1,4 @@
-"use client"; // Error components must be Client Components
-
+"use client";
 import { Button } from "@/components/ui/button";
 import Center from "@/components/layouts/center";
 import MessageBox from "@/components/message-box";
@@ -22,3 +21,4 @@ export default function Error({
         </MessageBox>
     );
 }
+
