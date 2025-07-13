@@ -3,6 +3,6 @@ import cloudflare from '@astrojs/cloudflare';
 
 export default defineConfig({
   site: 'https://linkbocilfb.pages.dev',
-  output: 'server',
+  output: 'hybrid',
   adapter: cloudflare(),
 });
