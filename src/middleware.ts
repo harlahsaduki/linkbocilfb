@@ -10,13 +10,8 @@ interface VideoData {
   description: string;
   category: string;
   thumbnail: string;
-  thumbnailWidth: number;
-  thumbnailHeight: number;
-  datePublished?: string;
-  dateModified?: string;
   embedUrl: string;
   tags: string;
-  previewUrl?: string;
   duration?: string;
 }
 
