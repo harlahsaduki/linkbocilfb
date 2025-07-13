@@ -5,4 +5,9 @@ export default defineConfig({
   site: 'https://linkbocilfb.pages.dev',
   output: 'hybrid',
   adapter: cloudflare(),
+    vite: {
+    ssr: {
+      noExternal: true,
+    },
+  },
 });
