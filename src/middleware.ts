@@ -1,6 +1,6 @@
 // src/middleware.ts
 import { defineMiddleware, type APIContext } from 'astro/middleware';
-import { slugify } from '../utils/slugify'; // Ensure this path is correct from src/middleware.ts
+import { slugify } from '../src/utils/slugify'; // Ensure this path is correct from src/middleware.ts
 
 // 1. Import the JSON file as a raw string
 import rawVideosJsonString from '../public/videos.json?raw';
