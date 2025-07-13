@@ -3,6 +3,7 @@
 import { Astro } from 'astro:env/server';
 import { slugify } from '../../utils/slugify.ts'; // Sesuaikan path jika slugify ada di lokasi lain
 import { getAllVideos, type VideoData } from '../../utils/data.ts'; // ⭐ Ambil dari data.ts
+import { terbit, nama, url, desk } from '../utils/site';
 
 // Global variable for processed video data
 let videoMap: Map<string, { title: string; slug: string; id: string }>;
@@ -69,7 +70,7 @@ export async function GET(context: Astro.APIContext) {
   const videoInfo = videoMap.get(videoId);
 
   if (videoInfo) {
-    const newPath = `/${videoInfo.slug}-${videoInfo.id}/`;
+    const newPath = `${url}/${videoInfo.slug}-${videoInfo.id}/`;
     console.log(`[Dynamic Page] Video found. REDIRECTING 301 from /v/${videoId} to ${newPath}`);
     return redirect(newPath, 301);
   } else {
