@@ -1,7 +1,7 @@
 // src/middleware.ts
 import { defineMiddleware, type APIContext } from 'astro/middleware';
 import { slugify } from '../src/utils/slugify'; // Pastikan path ini benar dari src/middleware.ts
-import videosData from '../src/public/videos.json'; // !!! Import langsung JSON dari public
+import videosData from '../public/videos.json'; // !!! Import langsung JSON dari public
 
 // Interface untuk struktur data video Anda
 interface VideoData {
